@@ -17,7 +17,43 @@
         console.log(classRoster.length) // print length of array
 
         // Part 2 - Objects with Nested Structures
+        let classInfo = { // object definition
+            className: 'ENSF381: Full-Stack Web Development',
+            instructor: 'Dr. Smith',
+            students: classRoster,
+            details: {
+                semester: 'Winter',
+                year: 2025
+            },
+            schedule: ['Monday', 'Wednesday', 'Friday'] 
+        }
+
+        classInfo.instructor = 'Dr. Abdellatif' // update instructor value
+
+        console.log(classInfo.className, classInfo.students) // print className and students
+
+        console.log(classInfo.details.semester) // access nested object values
+
+        console.log(classInfo)
         
+        // destructuring and logging object properties
+        let objectClassName = classInfo.className
+        let objectStudents = classInfo.students
+        console.log(objectClassName)
+        console.log(objectStudents)
+
+        let objectSemester = classInfo.details.semester
+        let objectYear = classInfo.details.year
+        console.log(objectSemester)
+        console.log(objectYear)
+
+        let student1 = classInfo.students[0]
+        let student2 = classInfo.students[1]
+        let remainingStudents = classInfo.students.slice(2)
+        console.log(student1)
+        console.log(student2)
+        console.log(remainingStudents)
+
     </script>
 </body>
 </html>
