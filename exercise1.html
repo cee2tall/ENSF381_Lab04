@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lab4 - Exercise 1</title>
+  </head>
+  <body>
+    <h1>Javascript Lab</h1>
+    <script>
+      //Variable Declaration
+      let x = 5;
+      const y = 10;
+      let z = "hello";
+      //   y = 3;
+      console.log(x, y, z);
+
+      //String Operations
+      let string1 = "Hello, World!";
+      let string2 = "JavaScript is fun!";
+      let str1_length = string1.length;
+      console.log(str1_length); // Display length of string1
+      let string3 = string1 + string2;
+      console.log(string3); // Display string1 and string2 concatenated
+      let str2_changed = string2.replace("fun", "awesome");
+      console.log(str2_changed);
+
+      //String Templates
+      let name = "Alice";
+      let age = 25;
+      let sentence = `My name is ${name} and I am ${age} years old`;
+      console.log(sentence);
+
+      //Working with Dates
+      let today = new Date(2025, 2, 14, 11, 30);
+      console.log(today);
+      let year_now = today.getFullYear();
+      console.log(year_now);
+      let month_now = today.getMonth();
+      console.log(month_now);
+      let day_week = today.getDay();
+      console.log(day_week);
+      let weekdays = [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ];
+      let day_week_str = weekdays[day_week - 1];
+      console.log(day_week_str);
+    </script>
+  </body>
+</html>
